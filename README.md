@@ -1,12 +1,19 @@
 ## HemeraOdyssey **BETA** (v1.0)
 Universal E3D Hemera mod for the Prusa i3 MK2 MK2.5 MK2.5S MK3 MK3S + Other variants  
 This is for advanced users so **please** fully read this [**README.md**](README.md) to avoid disappointment, frustration and missguided expectations!  
+
+**IT IS ESSENTIAL YOU READ THE INSTRUCTIONS FIRST! TRUST ME!!**
+
+To follow the instructions correctly you will likely have to purchase M3x14 Bolts - these do not come in the spare parts from the Prusa build kits. Use other lengths at your risk.
+
+Make sure too that you have some M3 nyloc nuts handy - makes things much easier.
+
 I make no claims about this mod, it simply satisfies the requirement of enabling the Hemera to be used on stock firmware, pass self test and XYZ calibration.
 
 [![F](https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico) **HemeraOdyssey Facebook group**](https://www.facebook.com/groups/HemeraOdyssey/)
 
 ## What is this mod
-This is a universal one fits all mod that enabled the use of the E3D Hemera extruder on a Prusa i3 MK2/S MK2.5/S MK3/S without needing custom firmware (sort of).  
+This is a universal one fits all mod that enabled the use of the E3D Hemera extruder on a Prusa i3 MK2/S MK2.5/S MK3/S without needing custom firmware (sort of - it is recommended that as an advanced user (you saw that in the notes above right?) you create your own Prusa firmware (INSERT LINK TO PRUSA INSTRUCTIONS) including the recommended changes below.  
 It will pass the self-test and XYZ calibration thanks to the geometry matching the stock setup but needs a minimum change to the e-steps that can be done via gcode.  
 There is no loss in build volume.  
 It supports both Laser and IR filament sensors.  
@@ -40,9 +47,9 @@ Please respect the GNU General Public License v3.0 that this mod is released und
 ## MMU2 Support?
 Not yet supported, however it is intended, but will require custom modified firmware which will come at a later date.
 
-## No custom firmware (sort of)???!!!
+## No custom firmware (sort of)???!!! HIGHLY Recommended that you create firmware specific for this mod...
 Aside from needing to change the e-steps, this will work with stock firmware but it's not ideal.
-The menu unload can cause a blob of filament to be pinched off below the hobbed gears. This in turn causes a filament jam that would then need clearing by dismantling the extruder.
+The menu option to unload filament (?? CHeck this - can this be altered in firmware - set unload length a bit more) can cause a blob of filament to be pinched off below the hobbed gears. This in turn causes a filament jam that would then need clearing by dismantling the extruder.
 On the MK3, the e-current will need to be increased slightly because the motor is 1.3A vs stock at 1.0A otherwise a moiré pattern is more visible than usual.
 
 ## Caveats
